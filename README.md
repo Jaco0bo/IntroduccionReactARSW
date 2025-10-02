@@ -10,7 +10,7 @@
 
    ![](/images/imagen2.png) 
 
-4. Siguiendo con los pasos de ágregamos las etiquetas ```<script>``` a nuestro archivo ```index.html``` y creamos el componente ``FirstComponent,jsx``:
+4. Siguiendo con los pasos del taller ágregamos las etiquetas ```<script>``` a nuestro archivo ```index.html``` y creamos el componente ``FirstComponent,jsx``:
 
    ![](/images/imagen3.png)
 
@@ -32,7 +32,7 @@
 
    ![](/images/imagen9.png) 
 
-7. Para terminar se nos pide implementar un tablero colaborativo en el que se le permita a multiples usuarios dibujar en el mismo tablero y que cada uno cuento con un color diferente. Ádemas debe haber un botón de borrar el tablero.
+7. Para terminar se nos pide implementar un tablero colaborativo en el que se le permita a multiples usuarios dibujar en el mismo tablero y que cada uno cuente con un color diferente. Ádemas debe haber un botón de borrar el tablero.
 
    Para ello y a recomendación de la guía hacemos uso de la librería ``p5`` de javascript agregandola al ``<head>`` de nuestro archivo ``index.html``:
 
@@ -90,9 +90,9 @@
    
    **Persistencia y simulación de tiempo real**
    
-   Flush: un interval (cada 200ms) lee ``pendingRef`` y lo concatena en ``localStorage[KEY_STROKES]``. Esto agrupa/batchea las escrituras para reducir operaciones frecuentes.
+   **Flush:** un interval (cada 200ms) lee ``pendingRef`` y lo concatena en ``localStorage[KEY_STROKES]``. Esto agrupa/batchea las escrituras para reducir operaciones frecuentes.
    
-   Poll + storage event: otro interval (cada 250ms) lee ``KEY_STROKES`` y ``KEY_CLEAR``. Además, se escucha el evento ``storage`` para aplicar cambios más rápido entre pestañas. Si detecta cambios actualiza ``strokesRef`` y el canvas se redibuja automáticamente.
+   **Poll** + **storage event**: otro interval (cada 250ms) lee ``KEY_STROKES`` y ``KEY_CLEAR``. Además, se escucha el evento ``storage`` para aplicar cambios más rápido entre pestañas. Si detecta cambios actualiza ``strokesRef`` y el canvas se redibuja automáticamente.
    
    Al pulsar el botón **Borrar tablero (para todos)** se escribe ``[]`` en ``KEY_STROKES`` y un timestamp en ``KEY_CLEAR`` para que todas las pestañas borren su vista.
    
@@ -110,7 +110,9 @@
    
    ![](/images/imagen11.png) 
    
-   ![](/images/imagen12.png) 
+   ![](/images/imagen12.png)
+
+   Al dar click al boton de borrar para todo, efectivamente todos los tableros quedan en blanco:
 
    ![](images/imagen13.png)
 
