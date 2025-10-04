@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "axios": "^1.12.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  },
+  "name": "introduccionreactarsw",
+  "version": "1.0.0",
+  "description": "1. Para la creación del ambiente de trabajo usamos spring initializr el cual genera de forma automáticamente el scafolding y añadiendo la dependencia de spring web tendriamos todo lo necesario para arrancar.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
